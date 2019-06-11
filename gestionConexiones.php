@@ -4,7 +4,7 @@
 
 function crearConexion($usuario, $nombre_bd) {
     $direccionIP = '127.0.0.1';
-    $pass = '422919';
+    $pass = '';
     $conexion = new mysqli($direccionIP, $usuario, $pass, $nombre_bd);
 
     if ($conexion->connect_errno || $conexion->connect_error) {
